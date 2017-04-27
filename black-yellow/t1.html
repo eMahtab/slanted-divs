@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="demo.css">
+	<style>
+         .se-container{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 70px;
+}
+.se-slope{
+	margin: 0 -50px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	-ms-transform-origin: left center;
+	transform-origin: left center;
+}
+.se-slope:nth-child(odd){
+	background: #000;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
+	margin-top: -200px;
+	box-shadow: 0px -1px 3px rgba(0,0,0,0.4);
+}
+.se-slope:nth-child(even){
+	background: yellow;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.4) inset;
+}
+.se-content{
+	margin: 0 auto;
+}
+.se-content h3{
+	font-size: 60px;
+	position: relative;
+	display: inline-block;
+	padding: 10px 30px 8px 30px;
+	height: 80px;
+	/*background: #000;*/
+	line-height: 80px;
+	margin-bottom: 20px;
+	font-family: 'Bitter', 'Trebuchet MS', Arial;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+}
+/*.se-content h3:before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 38px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-right: 60px solid black;
+	position: absolute;
+	left: -59px;
+	top: 0px;
+}
+.se-content h3:after{
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 38px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 60px solid black;
+	position: absolute;
+	right: -59px;
+	top: 0px;
+}*/
+/*.se-slope:nth-child(odd) .se-content h3:before,
+.se-slope:nth-child(odd) .se-content h3:after{
+	border-right-color: #e90089;
+	border-left-color: #e90089;
+}*/
+.se-content p{
+	width: 75%;
+	max-width: 500px;
+	margin: 0 auto;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 24px;
+	padding-top: 10px;
+}
+.se-content p:first-letter{
+	font-size: 40px;
+	font-family: 'Adobe Garamond Pro', Garamond, Palatino, 'Palatino Linotype', Times, 'Times New Roman', Georgia, serif;
+}
+.se-slope:nth-child(odd) .se-content{
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+	color: yellow;
+	padding: 130px 100px 250px 100px;
+}
+.se-slope:nth-child(even) .se-content{
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
+	color: #000;
+	padding: 150px 100px 250px 100px;
+}
+/*.se-slope:nth-child(odd) .se-content h3{
+	background: #e90089;
+	color: #000;
+}
+.se-slope:nth-child(even) .se-content h3{
+	background: #000;
+	color: #e90089;
+}*/
+
+/* Media Queries */
+@media screen and (max-width: 1010px){
+	.se-content h3{
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.se-content h3{
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.se-content h3{
+		font-size: 20px;
+		line-height: 20px;
+		padding-top: 30px;
+		height: 60px;
+	}
+	.se-content p{
+		width: 95%;
+	}
+	.se-slope:nth-child(odd) .se-content,
+	.se-slope:nth-child(even) .se-content{
+		padding-left:60px;
+		padding-right:60px;
+		
+	}
+}
+	</style>
+</head>
+<body>
+
+
+
+   <section class="se-container">
+				<div class="se-slope">
+					<article class="se-content">
+						<h3>They are stupid or genious</h3>
+						<p>
+							People always have a mind that devs are genious, or they are just awesome.
+						</p>
+					</article>
+				</div>
+				<div class="se-slope">
+					<article class="se-content">
+						<h3>They can hack anything</h3>
+						<p>
+						Not all devs can hack everything, but don't undermine
+						because they can
+						</p>
+					</article>
+				</div>
+				<div class="se-slope">
+					<article class="se-content">
+						<h3>All they do is code ....</h3>
+						<p>
+						 All they do is code, and all the time.	
+						</p>
+					</article>
+				</div>
+				<div class="se-slope">
+					<article class="se-content">
+						<h3>They earn a lot of money</h3>
+						<p>
+							Well slightly contrived but not very true.
+						</p>
+					</article>
+				</div>
+				<div class="se-slope">
+					<article class="se-content">
+						<h3>They can open your locked TSA bag</h3>
+						<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee. </p>
+					</article>
+				</div>
+				<div class="se-slope">
+					<article class="se-content">
+						<h3>TV or Freeze is not working they can fix it</h3>
+						<p>Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people. Like pit bulls. The dog of dogs. Pit bull can be the right man's best friend... or the wrong man's worst enemy. You going to give me a dog for a pet, give me a pit bull. Give me... Raoul. Right, Omar? Give me Raoul. </p>
+					</article>
+				</div>
+				<div class="se-slope">
+					<article class="se-content">
+						<h3>They love to be called a geek</h3>
+						<p>No all developers don't love words like techie or geek or hacker</p>
+					</article>
+				</div>
+				<div class="se-slope">
+					<article class="se-content">
+						<h3>They donn't love socilizing</h3>
+						<p>
+							They are from other planet
+						</p>
+					</article>
+				</div>
+			</section>
+
+
+</body>
+</html>
